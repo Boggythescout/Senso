@@ -45,7 +45,7 @@ ARCHITECTURE behavior OF tb_teilcounter IS
          res_n : IN  std_logic;
          res_score : IN  std_logic;
          inc_score : IN  std_logic;
-         value : OUT integer range 0 to 63
+         value : OUT zaehlerstand
         );
     END COMPONENT;
     
