@@ -1,51 +1,28 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do {tb_counter.fdo}
+# do {tb_BIN2BCD.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:54:14 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 Componenten/vergleicher.vhd 
+# Start time: 21:35:19 on Apr 25,2016
+# vcom -reportprogress 300 -explicit -93 BIN2BCD.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity gleich
-# -- Compiling architecture Behavioral of gleich
-# End time: 19:54:14 on Apr 25,2016, Elapsed time: 0:00:00
+# -- Compiling entity BIN2BCD
+# -- Compiling architecture Behavioral of BIN2BCD
+# End time: 21:35:19 on Apr 25,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:54:14 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 Componenten/teilcounter.vhd 
+# Start time: 21:35:19 on Apr 25,2016
+# vcom -reportprogress 300 -explicit -93 tb_BIN2BCD.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity teilcounter
-# -- Compiling architecture Behavioral of teilcounter
-# End time: 19:54:14 on Apr 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:54:14 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 Componenten/counter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity counter
-# -- Compiling architecture struct of counter
-# -- Loading package NUMERIC_STD
-# -- Loading entity teilcounter
-# -- Loading entity gleich
-# End time: 19:54:14 on Apr 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 19:54:14 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 tb_counter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_counter
-# -- Compiling architecture behavior of tb_counter
-# End time: 19:54:14 on Apr 25,2016, Elapsed time: 0:00:00
+# -- Compiling entity tb_BIN2BCD
+# -- Compiling architecture behavior of tb_BIN2BCD
+# End time: 21:35:19 on Apr 25,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # //  ModelSim PE Student Edition 10.4a Apr  7 2015 
 # //
@@ -65,41 +42,14 @@
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui -do "do {tb_counter.fdo}" 
-# Start time: 19:54:14 on Apr 25,2016
+# vsim -gui -do "do {tb_BIN2BCD.fdo}" 
+# Start time: 21:35:19 on Apr 25,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_counter(behavior)
 # Loading ieee.numeric_std(body)
-# Loading work.counter(struct)
-# Loading work.teilcounter(behavioral)
-# Loading work.gleich(behavioral)
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/an(3 downto 0) has no driver.
-# 
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/seg(6 downto 0) has no driver.
-# 
-# This port will contribute value (7'hXX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/dp has no driver.
-# 
-# This port will contribute value (U) to the signal network.
+# Loading work.tb_bin2bcd(behavior)
+# Loading work.bin2bcd(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-add wave -position 8 sim:/tb_counter/uut/step/zaehler/*
-add wave -position 9 sim:/tb_counter/uut/score/zaehler/*
-restart -f
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/an(3 downto 0) has no driver.
-# 
-# This port will contribute value (4'hX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/seg(6 downto 0) has no driver.
-# 
-# This port will contribute value (7'hXX) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /tb_counter/uut/dp has no driver.
-# 
-# This port will contribute value (U) to the signal network.
-run
-run
-# End time: 19:55:51 on Apr 25,2016, Elapsed time: 0:01:37
-# Errors: 0, Warnings: 6

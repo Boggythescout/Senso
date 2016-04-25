@@ -8,166 +8,169 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/lukas/FPGA-Projekte/Senso
-Ecounter
-Z1 w1461605646
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Ebin2bcd
+Z1 w1461612878
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8Componenten/counter.vhd
-Z5 FComponenten/counter.vhd
+Z5 8BIN2BCD.vhd
+Z6 FBIN2BCD.vhd
 l0
-L32
-V5Xo74lZlgo=9=hc0CS8US0
-!s100 EEVL`WAZK0^?f0PfR^OjE2
-Z6 OP;C;10.4a;61
+L33
+VjG@W_cf><mY94d6eio?ei2
+!s100 EKelj`^]_3DIIfHh[TVWc0
+Z7 OP;C;10.4a;61
 31
-Z7 !s110 1461606854
+Z8 !s110 1461612919
 !i10b 1
-Z8 !s108 1461606854.000000
-Z9 !s90 -reportprogress|300|-explicit|-93|Componenten/counter.vhd|
-Z10 !s107 Componenten/counter.vhd|
+Z9 !s108 1461612919.000000
+Z10 !s90 -reportprogress|300|-explicit|-93|BIN2BCD.vhd|
+Z11 !s107 BIN2BCD.vhd|
 !i113 1
-Z11 o-explicit -93 -O0
-Z12 tExplicit 1
-Astruct
-Z13 DEx4 work 6 gleich 0 22 h6>gzLASAo1<Le9H1F>h;3
-Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z15 DEx4 work 11 teilcounter 0 22 oZJbT=VgLV0NOS9@Mb?;n3
+Z12 o-explicit -93 -O0
+Z13 tExplicit 1
+Abehavioral
 R2
 R3
-DEx4 work 7 counter 0 22 5Xo74lZlgo=9=hc0CS8US0
-l45
-L42
-V9I6gUac;niz?DbA:hlzon3
-!s100 kTn]FX69VkL=lJc?NjN?Z0
-R6
-31
+R4
+DEx4 work 7 bin2bcd 0 22 jG@W_cf><mY94d6eio?ei2
+l42
+L40
+VDN^9Wi98?JF=W5OZcP_fN1
+!s100 @Y?34c=Ihi]9lbZSLkdCB0
 R7
-!i10b 1
+31
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
-R12
-Egleich
-Z16 w1461605694
-R14
-R2
-R3
-R0
-Z17 8Componenten/vergleicher.vhd
-Z18 FComponenten/vergleicher.vhd
-l0
-L32
-Vh6>gzLASAo1<Le9H1F>h;3
-!s100 07IbK:0RJzAoLWhNj42zP2
-R6
-31
-R7
-!i10b 1
-R8
-Z19 !s90 -reportprogress|300|-explicit|-93|Componenten/vergleicher.vhd|
-Z20 !s107 Componenten/vergleicher.vhd|
 !i113 1
-R11
 R12
-Abehavioral
-R14
-R2
-R3
 R13
-l40
-L38
-V0P50YIh1hYVnQm7j@Egk00
-!s100 QQG:Q@6U@4?9`nM=HZ55V1
-R6
-31
+Pmytype
+R2
+R3
+R4
+Z14 w1461611856
+R0
+Z15 8mytype.vhd
+Z16 Fmytype.vhd
+l0
+L13
+VC4mZ<jK5TzcZj_B2FE>8L1
+!s100 eg=hLBg9e@CT[IG7^94Z?2
 R7
+31
+Z17 !s110 1461611880
 !i10b 1
-R8
+Z18 !s108 1461611880.000000
+Z19 !s90 -reportprogress|300|-explicit|-93|mytype.vhd|
+Z20 !s107 mytype.vhd|
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 6 mytype 0 22 C4mZ<jK5TzcZj_B2FE>8L1
+R2
+R3
+R4
+l0
+L20
+VzlF4L?:CblG?XiWX<``N<0
+!s100 h>KVOQ^QlzVjl[Jn:2:ek0
+R7
+31
+R17
+!i10b 1
+R18
 R19
 R20
 !i113 1
-R11
 R12
-Etb_counter
-Z21 w1461606837
+R13
+Z21 nbody
+Pmytypes
 R2
 R3
+R4
+Z22 w1461611904
 R0
-Z22 8tb_counter.vhd
-Z23 Ftb_counter.vhd
+R15
+R16
+l0
+L14
+VRd=H<_R58^GUMi?Df^8U[3
+!s100 ccaO@?5_:mIamcHCMA4<b1
+R7
+31
+Z23 !s110 1461612300
+!i10b 1
+Z24 !s108 1461612300.000000
+R19
+R20
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 7 mytypes 0 22 Rd=H<_R58^GUMi?Df^8U[3
+R2
+R3
+R4
+l0
+L21
+V@nAN>@B_b6SAW0<jQH5[f1
+!s100 g4hOO2LUD9CHc^G2;^aNN3
+R7
+31
+R23
+!i10b 1
+R24
+R19
+R20
+!i113 1
+R12
+R13
+R21
+Etb_bin2bcd
+Z25 w1461612482
+R2
+R3
+R4
+R0
+Z26 8tb_BIN2BCD.vhd
+Z27 Ftb_BIN2BCD.vhd
 l0
 L35
-VcZKTEUNV01De[Q4W7XYjS0
-!s100 e0Q@J[9bD@[kfGJh__f<S0
-R6
-31
+V`P`nnj]df7O9FzloQRbS_2
+!s100 _?cIll=8gZ4IKSNck@8A^2
 R7
-!i10b 1
+31
 R8
-Z24 !s90 -reportprogress|300|-explicit|-93|tb_counter.vhd|
-Z25 !s107 tb_counter.vhd|
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-explicit|-93|tb_BIN2BCD.vhd|
+Z29 !s107 tb_BIN2BCD.vhd|
 !i113 1
-R11
 R12
+R13
 Abehavior
 R2
 R3
-DEx4 work 10 tb_counter 0 22 cZKTEUNV01De[Q4W7XYjS0
-l75
+R4
+Z30 DEx4 work 10 tb_bin2bcd 0 22 `P`nnj]df7O9FzloQRbS_2
+l61
 L38
-VJYb2LA<8kGfcI::dnS06V0
-!s100 mg_Sc:A;^<>PieCMN>7Oi3
-R6
-31
+Z31 VRiaJAJN9JUo^=oB6:dO^d3
+Z32 !s100 ^74n2NaUP]<FNG2fll=Mn2
 R7
-!i10b 1
-R8
-R24
-R25
-!i113 1
-R11
-R12
-Eteilcounter
-Z26 w1461578014
-R14
-R2
-R3
-R0
-Z27 8Componenten/teilcounter.vhd
-Z28 FComponenten/teilcounter.vhd
-l0
-L32
-VoZJbT=VgLV0NOS9@Mb?;n3
-!s100 <l0YdaG^9?lPOH[dBbCFT2
-R6
 31
-R7
-!i10b 1
 R8
-Z29 !s90 -reportprogress|300|-explicit|-93|Componenten/teilcounter.vhd|
-Z30 !s107 Componenten/teilcounter.vhd|
-!i113 1
-R11
-R12
-Abehavioral
-R14
-R2
-R3
-R15
-l42
-L40
-VM]]P4bT0dH:JQPe`DiTF31
-!s100 KVC>DJmoPJNz8H44`iaQ@3
-R6
-31
-R7
 !i10b 1
-R8
+R9
+R28
 R29
-R30
 !i113 1
-R11
 R12
+R13

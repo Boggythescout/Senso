@@ -105,8 +105,8 @@ begin
 		inc_step=>inc_step,
 		equal=>equal,
 		an=>an,
-		dp=>dp,
-		seg=>seg);
+		seg=>seg)
+    ;
 
 end struct;
 

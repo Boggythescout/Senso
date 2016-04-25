@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    12:03:23 04/04/2016 
+-- Create Date:    22:16:30 04/25/2016 
 -- Design Name: 
--- Module Name:    counter - Behavioral 
+-- Module Name:    Display - struct 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -19,9 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.all;
 use mytypes.all;
-
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -31,54 +29,48 @@ use mytypes.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter is
+entity Display is
 Port(
-	clk, res_n, res_score, inc_score, res_step, inc_step : in std_logic;
- 	an : out std_logic_vector(3 downto 0);
- 	seg : out std_logic_vector(6 downto 0);
- 	equal : out std_logic
-);
-end counter;
+	clk, res_n : in std_logic;
+	value: in zaehlerstand;
+	an : out std_logic_vector(3 downto 0);
+ 	seg : out std_logic_vector(6 downto 0)
+ 	);
+end Display;
 
-architecture struct of counter is
-	
-	Signal value1, value2 : zaehlerstand;
-
+architecture struct of Display is
+	signal seg1, seg2 : std_logic_vector(6 downto 0);
+	signal bcd1, bcd2 : bcd_ziffer;
 begin
-	step: entity teilcounter
+
+	bcd_wandler: entity BIN2BCD
 	port map(
-		clk=>clk,
-		res_n=>res_n,
-		res_score=>res_step,
-		inc_score=>inc_step,
-		value=> value1
+		value_in => value,
+		stelle1 => bcd1,
+		stelle2 => bcd2
 	);
 
-	score: entity teilcounter
+	decoder1: entity BCD27SEG_decoder
 	port map(
-		clk=>clk,
-		res_n=>res_n,
-		res_score=>res_score,
-		inc_score=>inc_score,
-		value => value2
+		ziffer=>bcd1,
+		seg=>seg1
 	);
 
-	vergleicher: entity gleich
+
+	decoder2: entity BCD27SEG_decoder
 	port map(
-		value1=>value1,
-		value2=>value2,
-		equal=>equal
+		ziffer=>bcd2,
+		seg=>seg2
 	);
 
-	display: entity display
+	display_mux: entity display_mux
 	port map(
+		seg1 => seg1,
+		seg2 => seg2,
 		clk=> clk,
 		res_n=>res_n,
-		value=> value1,
 		an=>an,
 		seg=>seg
 	);
-
-
 end struct;
 
