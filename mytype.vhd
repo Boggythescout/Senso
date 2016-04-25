@@ -9,14 +9,16 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
 
-package mytype is
+package mytypes is
 
 subtype zaehlerstand is Integer range 0 to 63;
+subtype bcd_ziffer is Integer range 0 to 9;
 
-end mytype;
+end mytypes;
 
-package body mytype is
+package body mytypes is
 
 ---- Example 1
 --  function <function_name>  (signal <signal_name> : in <type_declaration>  ) return <type_declaration> is
@@ -44,4 +46,4 @@ package body mytype is
 --    
 --  end <procedure_name>;
  
-end mytype;
+end mytypes;

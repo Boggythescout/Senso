@@ -1,55 +1,43 @@
 # Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do {tb_BIN2BCD.fdo}
+# do {tb_counter.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 21:35:19 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 BIN2BCD.vhd 
+# Start time: 22:57:51 on Apr 25,2016
+# vcom -reportprogress 300 -explicit -93 Componenten/mytype.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity BIN2BCD
-# -- Compiling architecture Behavioral of BIN2BCD
-# End time: 21:35:19 on Apr 25,2016, Elapsed time: 0:00:00
+# -- Compiling package mytypes
+# -- Compiling package body mytypes
+# -- Loading package mytypes
+# End time: 22:57:51 on Apr 25,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 21:35:19 on Apr 25,2016
-# vcom -reportprogress 300 -explicit -93 tb_BIN2BCD.vhd 
+# Start time: 22:57:51 on Apr 25,2016
+# vcom -reportprogress 300 -explicit -93 Componenten/display_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity display_mux
+# -- Compiling architecture Behavioral of display_mux
+# End time: 22:57:51 on Apr 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 22:57:51 on Apr 25,2016
+# vcom -reportprogress 300 -explicit -93 Componenten/BIN2BCD.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_BIN2BCD
-# -- Compiling architecture behavior of tb_BIN2BCD
-# End time: 21:35:19 on Apr 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
-# //
-# //  Copyright 1991-2015 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
-# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
-# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
-# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
-# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
-# //
-# // NOT FOR CORPORATE OR PRODUCTION USE.
-# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
-# // FOR HIGHER EDUCATION PURPOSES ONLY
-# //
-# vsim -gui -do "do {tb_BIN2BCD.fdo}" 
-# Start time: 21:35:19 on Apr 25,2016
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_bin2bcd(behavior)
-# Loading work.bin2bcd(behavioral)
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
+# ** Error: Componenten/BIN2BCD.vhd(27): (vcom-1136) Unknown identifier "mytypes".
+# 
+# ** Error: Componenten/BIN2BCD.vhd(33): VHDL Compiler exiting
+# End time: 22:57:51 on Apr 25,2016, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+# Error in macro ./tb_counter.fdo line 25
+# C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "Componenten/BIN2BCD.vhd""

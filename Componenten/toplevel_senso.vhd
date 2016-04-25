@@ -38,8 +38,7 @@ Port(
 
 	l : out std_logic_vector (3 downto 0);
 	an : out std_logic_vector(3 downto 0);
-	seg : out std_logic_vector(6 downto 0);
-	dp :out std_logic	
+	seg : out std_logic_vector(6 downto 0)
 );
 end toplevel_senso;
 
