@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use work.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -61,7 +61,7 @@ begin
 		value => value2
 	);
 
-	vergleicher: entity vergleicher
+	vergleicher: entity gleich
 	port map(
 		value1=>value1,
 		value2=>value2,

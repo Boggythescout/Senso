@@ -29,13 +29,13 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity vergleicher is
+entity gleich is
     Port ( value1 : in  Integer range 0 to 63;
            value2 : in  Integer range 0 to 63;
            equal : out  STD_LOGIC);
-end vergleicher;
+end gleich;
 
-architecture Behavioral of vergleicher is
+architecture Behavioral of gleich is
 
 begin
 	vergleicher: process (value1, value2) is
