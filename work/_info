@@ -8,118 +8,120 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/lukas/FPGA-Projekte/Senso
-Ebin2bcd
-Z1 w1461612878
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Ebcd27seg_decoder
+Z1 w1461618489
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8BIN2BCD.vhd
-Z6 FBIN2BCD.vhd
+Z4 8Componenten/BCD27SEG_decoder.vhd
+Z5 FComponenten/BCD27SEG_decoder.vhd
+l0
+L32
+VIbKP:iP1hBRjQJP0GPbhA3
+!s100 DJ;W=Q7omPVm1GTYj?B]U1
+Z6 OP;C;10.4a;61
+31
+Z7 !s110 1461620176
+!i10b 1
+Z8 !s108 1461620176.000000
+Z9 !s90 -reportprogress|300|-explicit|-93|Componenten/BCD27SEG_decoder.vhd|
+Z10 !s107 Componenten/BCD27SEG_decoder.vhd|
+!i113 1
+Z11 o-explicit -93 -O0
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+Z13 DEx4 work 16 bcd27seg_decoder 0 22 IbKP:iP1hBRjQJP0GPbhA3
+l41
+L39
+V=NJ?zDhR?DP7?TTnGAWTS0
+!s100 Bdb;216cecO[3DiO;DSLf0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebin2bcd
+Z14 w1461619721
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z16 8Componenten/BIN2BCD.vhd
+Z17 FComponenten/BIN2BCD.vhd
 l0
 L33
 VjG@W_cf><mY94d6eio?ei2
 !s100 EKelj`^]_3DIIfHh[TVWc0
-Z7 OP;C;10.4a;61
+R6
 31
-Z8 !s110 1461612919
+R7
 !i10b 1
-Z9 !s108 1461612919.000000
-Z10 !s90 -reportprogress|300|-explicit|-93|BIN2BCD.vhd|
-Z11 !s107 BIN2BCD.vhd|
+R8
+Z18 !s90 -reportprogress|300|-explicit|-93|Componenten/BIN2BCD.vhd|
+Z19 !s107 Componenten/BIN2BCD.vhd|
 !i113 1
-Z12 o-explicit -93 -O0
-Z13 tExplicit 1
+R11
+R12
 Abehavioral
+R15
 R2
 R3
-R4
-DEx4 work 7 bin2bcd 0 22 jG@W_cf><mY94d6eio?ei2
+Z20 DEx4 work 7 bin2bcd 0 22 jG@W_cf><mY94d6eio?ei2
 l42
 L40
-VDN^9Wi98?JF=W5OZcP_fN1
-!s100 @Y?34c=Ihi]9lbZSLkdCB0
-R7
+V;dGOGZ<?MG0a`GE;>oTRV1
+!s100 YzQgVBi70e[GoWFmGzPo;2
+R6
 31
+R7
+!i10b 1
 R8
-!i10b 1
-R9
-R10
-R11
-!i113 1
-R12
-R13
-Edisplay_mux
-Z14 w1461617031
-R3
-R4
-R0
-Z15 8Componenten/display_mux.vhd
-Z16 FComponenten/display_mux.vhd
-l0
-L32
-Vb4`^1H5Cn8MZ?aXPnFWk61
-!s100 aG[<?=6`G1VDcSDhkWZnS1
-R7
-31
-Z17 !s110 1461617871
-!i10b 1
-Z18 !s108 1461617871.000000
-Z19 !s90 -reportprogress|300|-explicit|-93|Componenten/display_mux.vhd|
-Z20 !s107 Componenten/display_mux.vhd|
-!i113 1
-R12
-R13
-Abehavioral
-R3
-R4
-DEx4 work 11 display_mux 0 22 b4`^1H5Cn8MZ?aXPnFWk61
-l45
-L41
-Vb6>L8<S?^e2M2[:Ja_>3V2
-!s100 LkahUn:4gR:g4DVczI?HD1
-R7
-31
-R17
-!i10b 1
 R18
 R19
-R20
 !i113 1
+R11
 R12
-R13
-Pmytype
+Ecounter
+Z21 w1461618890
 R2
 R3
-R4
-Z21 w1461611856
 R0
-Z22 8mytype.vhd
-Z23 Fmytype.vhd
+Z22 8Componenten/counter.vhd
+Z23 FComponenten/counter.vhd
 l0
-L13
-VC4mZ<jK5TzcZj_B2FE>8L1
-!s100 eg=hLBg9e@CT[IG7^94Z?2
-R7
+L34
+V7Ea[>N_bkBfY:U`kD2zUO0
+!s100 oISi56cC<B3M<6=iclL0K0
+R6
 31
-Z24 !s110 1461611880
+Z24 !s110 1461620177
 !i10b 1
-Z25 !s108 1461611880.000000
-Z26 !s90 -reportprogress|300|-explicit|-93|mytype.vhd|
-Z27 !s107 mytype.vhd|
+Z25 !s108 1461620177.000000
+Z26 !s90 -reportprogress|300|-explicit|-93|Componenten/counter.vhd|
+Z27 !s107 Componenten/counter.vhd|
 !i113 1
+R11
 R12
-R13
-Bbody
-DPx4 work 6 mytype 0 22 C4mZ<jK5TzcZj_B2FE>8L1
+Astruct
+Z28 DEx4 work 7 display 0 22 nQNkJR5z@abjTQS8Ldz793
+Z29 DEx4 work 6 gleich 0 22 ]m=nP;D:D?gQOnjAP<0bE2
+R15
+Z30 DEx4 work 11 teilcounter 0 22 _4>P?<6cGJd;EL>NoM04o2
 R2
 R3
-R4
-l0
-L20
-VzlF4L?:CblG?XiWX<``N<0
-!s100 h>KVOQ^QlzVjl[Jn:2:ek0
-R7
+DEx4 work 7 counter 0 22 7Ea[>N_bkBfY:U`kD2zUO0
+l47
+L43
+VBc2Y`@dULX>i?Pc:_lKAL2
+!s100 <nj`BWTH?Za2CN[`YHe6^3
+R6
 31
 R24
 !i10b 1
@@ -127,89 +129,208 @@ R25
 R26
 R27
 !i113 1
+R11
 R12
-R13
-Z28 nbody
-Pmytypes
+Edisplay
+Z31 w1461618584
 R2
 R3
-R4
-Z29 w1461611904
 R0
-Z30 8Componenten/mytype.vhd
-Z31 FComponenten/mytype.vhd
+Z32 8Componenten/Display.vhd
+Z33 FComponenten/Display.vhd
 l0
-L14
-VRd=H<_R58^GUMi?Df^8U[3
-!s100 ccaO@?5_:mIamcHCMA4<b1
-R7
+L32
+VnQNkJR5z@abjTQS8Ldz793
+!s100 We5R6b5`oGZA6OHU=gY>g3
+R6
 31
-R17
+R24
 !i10b 1
-R18
-Z32 !s90 -reportprogress|300|-explicit|-93|Componenten/mytype.vhd|
-Z33 !s107 Componenten/mytype.vhd|
+R25
+Z34 !s90 -reportprogress|300|-explicit|-93|Componenten/Display.vhd|
+Z35 !s107 Componenten/Display.vhd|
 !i113 1
+R11
 R12
+Astruct
+Z36 DEx4 work 11 display_mux 0 22 b4`^1H5Cn8MZ?aXPnFWk61
 R13
-Bbody
-DPx4 work 7 mytypes 0 22 Rd=H<_R58^GUMi?Df^8U[3
+R15
+R20
 R2
 R3
-R4
-l0
-L21
-V@nAN>@B_b6SAW0<jQH5[f1
-!s100 g4hOO2LUD9CHc^G2;^aNN3
-R7
-31
-R17
-!i10b 1
-R18
-R32
-R33
-!i113 1
-R12
-R13
 R28
-Etb_bin2bcd
-Z34 w1461612482
+l44
+L41
+V3gMVzf91XOl3`5?Z?XK8J1
+!s100 lURMhl<l8l4gIm^Li>LBG1
+R6
+31
+R24
+!i10b 1
+R25
+R34
+R35
+!i113 1
+R11
+R12
+Edisplay_mux
+Z37 w1461620161
 R2
 R3
-R4
 R0
-Z35 8tb_BIN2BCD.vhd
-Z36 Ftb_BIN2BCD.vhd
+Z38 8Componenten/display_mux.vhd
+Z39 FComponenten/display_mux.vhd
+l0
+L32
+Vb4`^1H5Cn8MZ?aXPnFWk61
+!s100 aG[<?=6`G1VDcSDhkWZnS1
+R6
+31
+R7
+!i10b 1
+R8
+Z40 !s90 -reportprogress|300|-explicit|-93|Componenten/display_mux.vhd|
+Z41 !s107 Componenten/display_mux.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+R36
+l45
+L41
+VcdH_hkhV3mF^N4;o?[k=n2
+!s100 R1n@WQTFVAl@BRH0FdMnh0
+R6
+31
+R7
+!i10b 1
+R8
+R40
+R41
+!i113 1
+R11
+R12
+Egleich
+Z42 w1461618008
+R15
+R2
+R3
+R0
+Z43 8Componenten/vergleicher.vhd
+Z44 FComponenten/vergleicher.vhd
+l0
+L34
+V]m=nP;D:D?gQOnjAP<0bE2
+!s100 TSc`G@5D:^]6m90<O<]5U1
+R6
+31
+R7
+!i10b 1
+R8
+Z45 !s90 -reportprogress|300|-explicit|-93|Componenten/vergleicher.vhd|
+Z46 !s107 Componenten/vergleicher.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R2
+R3
+R29
+l43
+L41
+VHH4Pz2NfR_mih__kL5o<01
+!s100 W9`CYj2U3E6nXDmdo?=<Z0
+R6
+31
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12
+Etb_counter
+Z47 w1461618925
+R2
+R3
+R0
+Z48 8Testbenches/tb_counter.vhd
+Z49 FTestbenches/tb_counter.vhd
 l0
 L35
-V`P`nnj]df7O9FzloQRbS_2
-!s100 _?cIll=8gZ4IKSNck@8A^2
-R7
+VcZKTEUNV01De[Q4W7XYjS0
+!s100 e0Q@J[9bD@[kfGJh__f<S0
+R6
 31
-R8
+R24
 !i10b 1
-R9
-Z37 !s90 -reportprogress|300|-explicit|-93|tb_BIN2BCD.vhd|
-Z38 !s107 tb_BIN2BCD.vhd|
+R25
+Z50 !s90 -reportprogress|300|-explicit|-93|Testbenches/tb_counter.vhd|
+Z51 !s107 Testbenches/tb_counter.vhd|
 !i113 1
+R11
 R12
-R13
 Abehavior
 R2
 R3
-R4
-DEx4 work 10 tb_bin2bcd 0 22 `P`nnj]df7O9FzloQRbS_2
-l61
+DEx4 work 10 tb_counter 0 22 cZKTEUNV01De[Q4W7XYjS0
+l73
 L38
-VRiaJAJN9JUo^=oB6:dO^d3
-!s100 ^74n2NaUP]<FNG2fll=Mn2
-R7
+VL0c4CQoNkVWfPWC=AXa8^0
+!s100 [A>JD3e]Cn>aC2UEclo5X3
+R6
 31
-R8
+R24
 !i10b 1
-R9
-R37
-R38
+R25
+R50
+R51
 !i113 1
+R11
 R12
-R13
+Eteilcounter
+Z52 w1461618032
+R15
+R2
+R3
+R0
+Z53 8Componenten/teilcounter.vhd
+Z54 FComponenten/teilcounter.vhd
+l0
+L33
+V_4>P?<6cGJd;EL>NoM04o2
+!s100 BBGclH24DS_>oJao7kXOh0
+R6
+31
+R24
+!i10b 1
+R25
+Z55 !s90 -reportprogress|300|-explicit|-93|Componenten/teilcounter.vhd|
+Z56 !s107 Componenten/teilcounter.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R15
+R2
+R3
+R30
+l43
+L41
+V:LMWc`<HWk6IUM3nPg2K]0
+!s100 o8gPmC?e;9l;E^H?_3UST0
+R6
+31
+R24
+!i10b 1
+R25
+R55
+R56
+!i113 1
+R11
+R12

@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use mytypes.all;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -31,7 +31,7 @@ use mytypes.all;
 
 entity BCD27SEG_decoder is
 Port(
-	ziffer: in bcd_ziffer := 0;
+	ziffer: in Integer range 0 to 9 := 0;
 	seg: out std_logic_vector(6 downto 0)
 	);
 end BCD27SEG_decoder;

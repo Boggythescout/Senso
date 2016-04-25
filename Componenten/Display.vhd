@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use mytypes.all;
+use work.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -32,7 +32,7 @@ use mytypes.all;
 entity Display is
 Port(
 	clk, res_n : in std_logic;
-	value: in zaehlerstand;
+	value: in Integer range 0 to 63;
 	an : out std_logic_vector(3 downto 0);
  	seg : out std_logic_vector(6 downto 0)
  	);
@@ -40,7 +40,7 @@ end Display;
 
 architecture struct of Display is
 	signal seg1, seg2 : std_logic_vector(6 downto 0);
-	signal bcd1, bcd2 : bcd_ziffer;
+	signal bcd1, bcd2 : Integer range 0 to 9;
 begin
 
 	bcd_wandler: entity BIN2BCD
@@ -63,7 +63,7 @@ begin
 		seg=>seg2
 	);
 
-	display_mux: entity display_mux
+	display_mux1: entity display_mux
 	port map(
 		seg1 => seg1,
 		seg2 => seg2,

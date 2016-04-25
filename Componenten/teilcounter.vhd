@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 use work.all;
-use mytypes.all;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
@@ -35,7 +35,7 @@ entity teilcounter is
            res_n : in  STD_LOGIC;
            res_score : in  STD_LOGIC;
            inc_score : in  STD_LOGIC;
-           value : out  zaehlerstand);
+           value : out  Integer range 0 to 63);
 end teilcounter;
 
 architecture Behavioral of teilcounter is

@@ -49,8 +49,7 @@ ARCHITECTURE behavior OF tb_counter IS
          inc_step : IN  std_logic;
          an : OUT  std_logic_vector(3 downto 0);
          seg : OUT  std_logic_vector(6 downto 0);
-         equal : OUT  std_logic;
-         dp : OUT  std_logic
+         equal : OUT  std_logic
         );
     END COMPONENT;
     
@@ -67,8 +66,7 @@ ARCHITECTURE behavior OF tb_counter IS
    signal an : std_logic_vector(3 downto 0);
    signal seg : std_logic_vector(6 downto 0);
    signal equal : std_logic;
-   signal dp : std_logic;
-
+   
    -- Clock period definitions
    constant clk_period : time := 10 ns;
  
@@ -84,8 +82,7 @@ BEGIN
           inc_step => inc_step,
           an => an,
           seg => seg,
-          equal => equal,
-          dp => dp
+          equal => equal          
         );
 
    -- Clock process definitions

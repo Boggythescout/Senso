@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-use mytypes.all;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
@@ -32,8 +32,8 @@ use mytypes.all;
 
 entity BIN2BCD is
 Port(
-	value_in: in zaehlerstand;
-	stelle2, stelle1: out bcd_ziffer
+	value_in: in Integer range 0 to 63;
+	stelle2, stelle1: out Integer range 0 to 9
 );
 end BIN2BCD;
 
@@ -41,28 +41,24 @@ architecture Behavioral of BIN2BCD is
 
 begin
 	process(value_in)
-		subtype zehnertype is Integer range 0 to zaehlerstand'high-bcd_ziffer'high;
-		variable zehner: zehnertype;
-		variable zehnerbuffer: bcd_ziffer;
-		variable einser: bcd_ziffer;
+		variable zehnerbuffer: Integer range 0 to 9;
+		variable einser: Integer range 0 to 9;
 	begin
-		einser:=value_in mod 2;
-		stelle1<= einser;
-
-		zehner:=(value_in - einser);
-		zehnerbuffer:=0;
-		if zehner > 0 then
-			for n in 0 to 6 loop
-				if zehner=n*10 then
+		zehnerbuffer:= 0;
+		if value_in >=10  then
+			for n in 1 to 6 loop
+				if value_in>=n*10 then
 					zehnerbuffer:=n;
 				else 
 					zehnerbuffer:=zehnerbuffer;
 				end if;
 			end loop;
-			stelle2<=zehnerbuffer;
 		else
-			stelle2<=0;
+			zehnerbuffer:=0;
 		end if;
+		stelle2<=zehnerbuffer;
+
+		stelle1<=value_in-(zehnerbuffer*10);
 	end process;
 end Behavioral;
 

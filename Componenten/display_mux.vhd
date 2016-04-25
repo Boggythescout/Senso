@@ -45,19 +45,25 @@ architecture Behavioral of display_mux is
 begin
 	zaehler: process(clk, res_n)
 		variable zaehlerstand: rangetype;
+		variable dispbuffer : disptype;
 	begin	
-		if res_n='1' then
+		if res_n='0' then
 			zaehlerstand:=0;
 		else
 			if clk='1' and clk'event then
 				if zaehlerstand = (rangetype'high) then
 					zaehlerstand:=rangetype'low;
-					disp<=disp+1;
+					if dispbuffer=disptype'high then
+						dispbuffer:=disptype'low;
+					else
+						dispbuffer:=dispbuffer+1;
+					end if;
 				else
 					zaehlerstand:= zaehlerstand+1;
 				end if;
 			end if;
 		end if;
+		disp<=dispbuffer;
 	end process;
 
 	mux: process(disp, seg1 , seg2, seg3, seg4)

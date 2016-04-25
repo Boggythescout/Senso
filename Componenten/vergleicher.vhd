@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
-use mytypes.all;
+
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -32,8 +32,8 @@ use mytypes.all;
 --use UNISIM.VComponents.all;
 
 entity gleich is
-    Port ( value1 : in  zaehlerstand;
-           value2 : in  zaehlerstand;
+    Port ( value1 : in  Integer range 0 to 63;
+           value2 : in  Integer range 0 to 63;
            equal : out  STD_LOGIC
     );
 end gleich;

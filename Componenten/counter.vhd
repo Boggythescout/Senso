@@ -20,7 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
-use mytypes.all;
+
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -42,7 +42,7 @@ end counter;
 
 architecture struct of counter is
 	
-	Signal value1, value2 : zaehlerstand;
+	Signal value1, value2 : Integer range 0 to 63;
 
 begin
 	step: entity teilcounter
@@ -70,7 +70,7 @@ begin
 		equal=>equal
 	);
 
-	display: entity display
+	display1: entity Display
 	port map(
 		clk=> clk,
 		res_n=>res_n,
