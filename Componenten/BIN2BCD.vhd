@@ -49,13 +49,12 @@ begin
 			for n in 1 to 6 loop
 				if value_in>=n*10 then
 					zehnerbuffer:=n;
-				else 
-					zehnerbuffer:=zehnerbuffer;
 				end if;
 			end loop;
 		else
 			zehnerbuffer:=0;
 		end if;
+
 		stelle2<=zehnerbuffer;
 
 		stelle1<=value_in-(zehnerbuffer*10);
