@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -40,10 +41,46 @@ Port(
 );
 end main;
 
-architecture Behav of main is
-
+architecture struct of main is
+	signal led_ctrl,tick,key : std_logic;
+	signal kval: integer range 0 to 4; 
 begin
+	hauptsteuerung1: entity Hauptsteuerung
+	port map(
+		led_ctrl=>led_ctrl, 
+		shift=>shift, 
+		store=>store, 
+		restore=>restore,
+		res_score=>res_score,
+		inc_score=>inc_score, 
+		res_step=>res_step,
+		inc_step=>inc_step,
+		rnd=>rnd,
+		tick=>tick,
+		key=>key,
+		equal=>equal,
+		kval=>kval);
+
+	Ticktack: entity tickgenerator
+	port map(
+		tick=>tick,
+		res_n=>res_n,
+		clk=>clk);
+
+	Ausgabe1: entity ausgabe
+	port map(
+		led_ctrl=>led_ctrl,
+		kval=>kval,
+		rnd=>rnd,
+		l=>l);
+
+	Tastee: entity Tasterabfrage
+	port map(
+		taster=>t,
+		key=>key,
+		kval=>kval);
+end struct;
 
 
-end Behav;
+
 
